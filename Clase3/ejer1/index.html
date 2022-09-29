@@ -1,0 +1,36 @@
+<!--
+realizar una aplicacion que el usuario pueda ingresar 2 numeros "n" y los pueda sumar, restar, dividir y multiplicar.
+Todo con un boton submit get/post 
+HTML -> select
+PHP -> switch
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="calculadora.php" method="POST">
+            <label>Numero 1:</label>
+            <input type="text" name="varNum1"/>
+            <br><br>
+            
+            <label>Numero 2:</label>
+            <input type="text" name="varNum2"/>
+            <br><br>
+
+            <select name="idCalcu">
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="multi">Multiplicar</option>
+                <option value="divi">Dividir</option>
+            </select>
+
+            <input type="submit" name="btnCalcular" value="Calcular">            
+        </form>
+    </body>
+</html>
