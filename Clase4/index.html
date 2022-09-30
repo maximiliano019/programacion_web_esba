@@ -28,8 +28,45 @@
         <input type="text" pattern="A(1|3|4|5)|a(1|3|4|5)" title="Modelos posibles: A1, A3, A4 y A5" name=""><br><br>
 
         <label>Hora:</label>
-        <input type="time" required name=""><br><br>
-        
+        <input type="time" name=""><br><br>
+
+        <label>Fecha:</label>
+        <input type="date" name=""><br><br>
+
+        <label>Semana:</label>
+        <input type="week"  name=""><br><br>
+
+        <label>Fecha y hora:</label>
+        <input type="datetime-local" required name=""><br><br>
+
+        <label>Color:</label>
+        <input type="color" name=""><br><br>
+
+        <label>Buscar:</label>
+        <input type="search" name=""><br><br>
+
+        <label>Slider:</label>
+        <input type="range" max="100" min="0" value="25" step="20" name=""><br><br>
+
+        <label>Consulta:</label>
+        <textarea></textarea><br><br>
+
+        <legend>Elija una opcion de pago:</legend>
+        <input type="radio" id="radio-1" name="radio" value="Efectivo" checked>
+        <label for="radio-1">pago con efectivo</label>
+        <input type="radio" id="radio-2" name="radio" value="Tarjeta">
+        <label for="radio-2">pago con tarjeta</label><br><br>
+
+        <legend>Elija un deporte:</legend>
+        <input type="checkbox" id="chk1" name="chk-1">
+        <label for="chk1">Tenis</label>
+        <input type="checkbox" id="chk2" name="chk-2">
+        <label for="chk2">Natación</label><br><br>
+
+
+
+
+
         <input type="submit">
     </form>
 </body>

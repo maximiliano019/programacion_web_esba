@@ -1,0 +1,73 @@
+<!--
+hacer un formulario donde al usuario se le pida:
+
+nombre
+apellido
+domicilio
+estudios cursados (el mas importante)
+- primario
+- secundario
+- terciario
+- universitario
+deporte que practican
+- tenis
+- futbol
+- pesas
+- natacion
+- ninguno
+
+si quiere suscribirse al boletin de noticias
+
+boton enviar
+
+en php tiene que decir
+
+Gracias [nombre] y [apellido] , Tus estudios cursados son: [estudio] y tu/s deporte/s favoritos son:[deportes]
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Componentes</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form action="procesar.php" method="POST">
+        <h1>Complete el formulario</h1><br>
+        <label>Nombre:</label>
+        <input type="text"name="txtNom" required placeholder="ingrese su nombre"><br><br>
+
+        <label>Apellido:</label>
+        <input type="text"name="txtApe" required placeholder="ingrese su apellido"><br><br>
+
+        <label>Domicilio:</label>
+        <input type="text"name="txtDomi" required placeholder="ingrese su domicilio"><br><br>
+
+        <legend>Estudios Cursados:</legend>
+        <input type="radio" id="radPri" name="rEstu" value="primario" checked>
+        <label for="radPri">Primario</label>
+        <input type="radio" id="radSec" name="rEstu" value="secundario">
+        <label for="radSec">Secundario</label>
+        <input type="radio" id="radTer" name="rEstu" value="terciario">
+        <label for="radTer">Terciario</label>
+        <input type="radio" id="radUni" name="rEstu" value="universitario">
+        <label for="radUni">Universitario</label><br><br>
+        
+        <legend>Deporte que Practica:</legend>
+        <input type="checkbox" id="chTen" name="chTen" value="tenis">
+        <label for="chTen">Tenis</label>
+        <input type="checkbox" id="chFut" name="chFut" value="futbol">
+        <label for="chFut">Futbol</label>
+        <input type="checkbox" id="chPes" name="chPes" value="pesas">
+        <label for="chPes">Pesas</label>
+        <input type="checkbox" id="chNat" name="chNat" value="natacion">
+        <label for="chNat">Natación</label>
+        <input type="checkbox" id="chNin" name="chNin" value="ninguno" checked>
+        <label for="chNin">Ninguno</label><br><br>
+
+        <input type="checkbox" id="chBole" name="chBole" checked>
+        <label for="chBole">Quiere suscribirse al boletin de noticias</label><br><br>
+        
+        <input type="submit">
+    </form>
+</body>
+</html>
