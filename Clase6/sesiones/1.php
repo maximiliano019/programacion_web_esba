@@ -1,5 +1,9 @@
 <?php
+    session_start();
+
     $nombre = $_POST['nombre'];
+    $_SESSION['NOMBRE'] = $nombre;
+    
     echo $nombre;
     echo '</br>';
     echo '<form action="2.php" method="post">
