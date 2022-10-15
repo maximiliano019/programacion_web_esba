@@ -17,4 +17,6 @@
     // se ejecuta una vez y el resto lo busca en memoria
     require_once("mensaje.php");
 
+
+    echo "<br><br><br><a href='../index.html'><img src='../img/btn_atras.png' width='5%''></a>";
 ?>

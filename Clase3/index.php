@@ -67,4 +67,6 @@ marca:
 
 echo "Este texto si se ve";
 
+
+echo "<br><br><br><a href='../index.html'><img src='../img/btn_atras.png' width='5%''></a>";
 ?>
