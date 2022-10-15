@@ -30,4 +30,5 @@
             <a href='index.html'><img src='./img/flechas.png' width='5%''></a>";
 
     session_destroy();
+    
 ?>
