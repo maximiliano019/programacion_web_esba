@@ -1,5 +1,5 @@
 <?php
-    //setcookie('nombreCookie','Algo...',time()+4800);
+    setcookie('nombreCookie','Algo...',time()+4800);
 
     if (isset($_COOKIE['nombreCookie'])){
         echo 'El valor o contenido de la cookie es: ' .$_COOKIE['nombreCookie'];        
@@ -9,5 +9,5 @@
 
 
 
-    echo "<br><br><br><a href='../index.html'><img src='../img/btn_atras.png' width='5%''></a>";
+    echo "<br><br><br><a href='../usuario.php'><img src='../img/btn_atras.png' width='5%'></a>";
 ?>

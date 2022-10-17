@@ -18,5 +18,5 @@
     require_once("mensaje.php");
 
 
-    echo "<br><br><br><a href='../index.html'><img src='../img/btn_atras.png' width='5%''></a>";
+    echo "<br><br><br><a href='../usuario.php'><img src='../img/btn_atras.png' width='5%'></a>";
 ?>
