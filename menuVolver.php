@@ -1,9 +1,6 @@
 <?php    
     session_start();
 
-    $apellido = $_POST['apellido'];
-    $_SESSION['apellido'] = $apellido;    
-
     echo "<h2 style='text-align: right;'>Bienvenido: ".$_SESSION['nombre']." ".$_SESSION['apellido']."</h2>";
     
     echo "  <title>Ejercicios</title>

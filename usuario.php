@@ -1,8 +1,12 @@
 <?php
     session_start();
 
-    $usuario = $_POST['usuario'];
-    $_SESSION['usuario'] = $usuario;    
+    $nombre = $_POST['nombre'];
+    $_SESSION['nombre'] = $nombre;    
 
-    include('menu.php');
+    echo '  <form action="menu.php" method="post">
+                <label>Ingrese su apellido: </label>
+                <input type="text" name="apellido" required><br><br>
+                <input type="submit" name="">
+            </form>';
 ?>
