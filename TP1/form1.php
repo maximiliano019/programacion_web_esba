@@ -26,7 +26,11 @@
         if (isset($_POST ['chk4']) && $_POST ['chk4'] == "Jazz"){
             $tipoMusica = $tipoMusica . " " . $_POST ['chk4'];
         }   
-    }        
+    }
+    
+    if (isset($_POST ['chk1']) == false && isset($_POST ['chk2']) == false && isset($_POST ['chk3']) == false && isset($_POST ['chk4']) == false && isset($_POST ['chk5']) == false){
+        $tipoMusica = "Ninguna";                
+    }
     
     $_SESSION['tipoMusica'] = $tipoMusica;   
     
