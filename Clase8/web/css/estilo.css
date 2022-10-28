@@ -1,0 +1,53 @@
+#header {
+    background-color: silver;
+    width: 100%;
+    height: 90px;
+}
+
+#header a:hover {
+    color: yellow;
+}
+
+#header a {
+    color: gold;
+}
+
+#menu {
+    float: right;
+    margin-top: 5px;
+    padding-right: 20px;
+}
+
+#menu li {
+    display: inline;
+    padding: 20px;
+}
+
+#contenido {
+    background-color: green;
+    margin-top: 50px;
+    height: 120px;
+    width: 100%;
+}
+#contenido h1 {
+    font-size: 15px;
+    font-family: Arial;
+    color: white;
+}
+
+#contenido p {
+    font-size: 12px;
+    font-family: verdana;
+}
+
+#footer {
+    background-color: black;
+    width: 100%;
+    height: 90px;    
+}
+
+#footer p {
+    font-size: 12px;
+    font-family: verdana;
+    color: white;
+}

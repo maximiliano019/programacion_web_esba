@@ -1,0 +1,17 @@
+#parrafo1 {
+    font-size: 10px;
+    font-family: verdana;
+    color: silver;
+}
+
+.tituloh2 {
+    font-size: 13px;
+    font-family: arial;
+    text-shadow: 5px 10px 10px;
+    color: gold;
+}
+
+h3 {
+    font-size: 8px;
+    color: blue;
+}
