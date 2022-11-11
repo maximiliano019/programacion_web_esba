@@ -57,6 +57,30 @@
                              values ("Victoria", "Bravo", 21, 124578654)');
 */
 
+    echo '<br>';
+    echo '<br>';
+
+    //mostrar
     $consulta = mysqli_query($conexion, 'select * from mi_agenda');
+
+    while ($fila = mysqli_fetch_array($consulta)){
+        echo $fila['nombre'].' '.$fila['apellido'].' '.$fila['edad'].' '.$fila['telefono'];
+        echo '<br>';
+    }
+
+    echo '<br>';
+    echo '<br>';
+
+    //actualizar
+/*
+    mysqli_query($conexion, 'update mi_agenda set edad = 28 where nombre = "juan" and apellido = "sanchez"');
+*/
+  
+    //eliminar
+
+/*    
+    mysqli_query($conexion, 'delete from mi_agenda where nombre = "pepe" and apellido = "rodriguez"');
+*/
+
 
 ?>
