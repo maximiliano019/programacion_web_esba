@@ -9,5 +9,5 @@
 
 
 
-    echo "<br><br><br><a href='../menuVolver.php'><img src='../img/btn_atras.png' width='5%'></a>";
+    echo "<br><br><br><a href='../TP1/menuVolver.php'><img src='../TP1/img/btn_atras.png' width='5%'></a>";
 ?>
