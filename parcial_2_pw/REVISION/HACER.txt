@@ -1,0 +1,33 @@
+>>>>>>>>>>>>>>>>> IMPORTANTE <<<<<<<<<<<<<
+
+separar el html de los php para que no este todo en index.php ( sino es mas dificil de explicar)
+
+
+
+>>>>>>>>>>> VALIAR <<<<<<<<<<<<<<<<<<
+
+-- si pongo numeros en donde va el nombre lo toma igual.
+
+-- validar que elija un sexo .. mujer y hombre
+
+
+
+
+>>>>>>>>>>> NO TIENE QUE PASAR <<<<<<<<<<<<<<<<<<<
+
+-- si actualizo la pagina sin poner ningun dato , se genera el mismo registro pero con otro id en la base
+
+
+
+>>>>>>>>>>>>ESTETICO<<<<<<<<<<<<<<<
+
+-- Centrar el contenedor de formulario y de personas registrdas.
+
+-- eliminar singo " < " donde se ve la query.
+
+-- NO ANDA EL FONDO
+
+
+
+
+

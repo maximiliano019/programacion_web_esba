@@ -1,0 +1,81 @@
+<!-- 
+        * PARCIAL PROGRAMACION WEB * 
+
+        DOCENTE: LUIS HERETER
+        ALUMNOS: AXEL BLANCO - PATRICIO VISCIGLIA
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - iMusic 🎧</title>
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body class="fondo2">
+    
+
+    <h1>Datos Personales</h1>
+
+    <form action="form1.php" method="POST">
+        
+        <label>I - Nombre Completo:</label>
+        <input type="text" name="nombre" placeholder="Ingresa tu nombre..." required><br><br>       
+
+        <label>II - Edad:</label>
+        <input type="number" name="edad" placeholder="Ingresa tu edad..." required><br><br>
+        
+        <label>III - Email:</label>
+        <input type="email" name="email" placeholder="Ingresa tu email..." required><br><br>
+        <br><br>
+
+        <h1>Preguntas</h1>
+        
+        <label>I - Selecciona uno o varios géneros musicales que te gusten 🎶</label><br><br>
+        <input type="checkbox" id="chk1" name="chk1" value="Rock & Roll">
+        <label for="chk1">Rock & Roll</label>
+        <input type="checkbox" id="chk2" name="chk2" value="Heavy Metal">
+        <label for="chk2">Heavy Metal</label>
+        <input type="checkbox" id="chk3" name="chk3" value="Blues">
+        <label for="chk3">Blues</label>
+        <input type="checkbox" id="chk4" name="chk4" value="Jazz">
+        <label for="chk4">Jazz</label>
+        <input type="checkbox" id="chk5" name="chk5" value="Pop">
+        <label for="chk5">Pop</label>
+        <br><br>
+        <input type="checkbox" id="chk6" name="chk6" value="Tango">
+        <label for="chk6">Tango</label>
+        <input type="checkbox" id="chk7" name="chk7" value="Bachata">
+        <label for="chk7">Bachata</label>
+        <input type="checkbox" id="chk8" name="chk8" value="Cumbia">
+        <label for="chk8">Cumbia</label>
+        <input type="checkbox" id="chk9" name="chk9" value="Electrónica">
+        <label for="chk9">Electrónica</label>
+        <input type="checkbox" id="chk10" name="chk10" value="Ninguna" checked>
+        <label for="chk10">Ninguna</label><br><br><br><br>
+    
+        
+        <label>II - ¿ Qué instrumento de la siguiente lista es el que más te representa ?</label><br></br>
+        <select type="combo" name="combo" required>
+            <option value="" disabled selected>Seleccione una opcion...</option>
+            <option value="🎙️ · La Voz">🎙️ - La Voz</option>
+            <option value="🪕 · Bajo">🪕 - Bajo </option>
+            <option value="🥁 · Batería">🥁 - Batería </option>
+            <option value="🎸 · Guitarra Criolla, Acustica o Eléctrica">🎸 - Guitarra Criolla, Acustica o Eléctrica </option>
+            <option value="🎹 · Piano o Teclado">🎹 - Piano o Teclado</option>
+            <option value="🎻 - Violin">🎻 - Violin </option>
+            <option value="🎷 - Saxofón">🎷 - Saxofón </option>
+        </select><br><br><br><br>
+
+        <label>III - ¿ Tocas en alguna banda ?</label><br></br>
+        <input type="radio" id="radio-1" name="radio" value="Si" required>
+        <label for="radio-1">Si</label>
+        <input type="radio" id="radio-2" name="radio" value="No">
+        <label for="radio-2">No</label>
+        <div><input type="submit" name="submit" value="FINALIZAR"></div>
+    </form>    
+</body>
+</html>

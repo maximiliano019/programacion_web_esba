@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f2f2f2;
+    background-image: url(../img/fondo.jpg);
+    background-size: 100%;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.contenedor{
+    width: 600px;
+    margin: 40px;
+}
+
+.contenedor .formulario .contenedor-inputs{
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px 6px 0 0;
+}
+
+.contenedor .formulario input[type="text"],
+.contenedor .formulario input[type="email"]{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding:  15px 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.contenedor .formulario input[type="text"]:focus,
+.contenedor .formulario input[type="email"]:focus{
+    border-bottom: 2px solid #246eb9;
+}
+
+.contenedor .formulario input[type="radio"]{
+    display: none;
+}
+
+.contenedor .formulario .sexo .hombre{
+    border-radius: 7px 0 0 7px;
+}
+
+.contenedor .formulario .sexo .mujer{
+    border-radius: 0px 7px 7px 0px;
+}
+
+.contenedor .formulario .sexo{
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+
+.contenedor .formulario .label-radio{
+    background: grey;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 49.5%;
+}
+
+.contenedor .formulario input[type="radio"]:checked + .label-radio{
+    background: green;
+}
+
+.contenedor .formulario .terminos{
+    text-align: center;
+    color: #424242;
+}
+
+.contenedor .formulario label{
+    margin-left: 10px;
+}
+
+.contenedor .formulario .error{
+    display: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    background: #ce1818;
+    color: #fff;
+    padding: 15px 10px;
+    padding-left: 40px;
+}
+
+.contenedor .formulario .btn{
+    width: 100%;
+    text-align: center;
+    background: #246eb9;
+    color: #fff;
+    border: none;
+    display: block;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 0 0 6px 6px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.contenedor .formulario .btn:hover{
+    background: #4357ad;
+}
+
+.contenedor .tabla{
+    margin: 50px 0 0 0;
+    width: 800px;
+    height: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 6px 6px 6px 6px;
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+th, td {
+padding: 8px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color:#dadedc;}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    text-decoration: wavy;
+    
+}
+
+.fondo{
+    background-image: url(/img/fondo.jpg);
+}
