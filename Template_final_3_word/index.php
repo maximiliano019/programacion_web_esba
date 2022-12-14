@@ -18,12 +18,17 @@
             else {
                 echo 'No se ha creado la base de datos por: '.mysqli_error();
             }
-        }      
+        } 
+        else {
+            echo 'La base de datos ha sido creada con anterioridad';
+        }    
+        
+        echo '<br>';
 
         //crear tabla
         mysqli_select_db($conexion,'libreria');
 
-        $sql = 'create table libros (
+        $sql = 'create table IF NOT EXISTS libros (
                     id int not null auto_increment,
                     primary key (id),
                     titulo varchar (60),
@@ -32,19 +37,18 @@
                     descripcion varchar (60)
                 )';
                 
-        if (!mysqli_query($conexion,'libreria')){
-            mysqli_query($conexion, $sql);
-        }
+        mysqli_query($conexion, $sql);
 
         //insert registro
         mysqli_query($conexion, 'insert into libros (titulo, autor, isbn, descripcion)
                                 values ("fierro", "alejandro", "2145785621", "libro")');
 
         echo '<br>';
-        echo '<br>';
 
         //mostrar
         $consulta = mysqli_query($conexion, 'select * from libros');
+
+        echo '<h4>Resultado de la tabla:</h4>';
 
         while ($fila = mysqli_fetch_array($consulta)){
             echo $fila['id'].' '.$fila['titulo'].' '.$fila['autor'].' '.$fila['isbn'].' '.$fila['descripcion'];
