@@ -41,7 +41,7 @@
 
         //insert registro
         mysqli_query($conexion, 'insert into libros (titulo, autor, isbn, descripcion)
-                                values ("fierro", "alejandro", "2145785621", "libro")');
+                                values ("fierro", "alejandro", "123", "libro")');
 
         echo '<br>';
 
@@ -49,11 +49,35 @@
         $consulta = mysqli_query($conexion, 'select * from libros');
 
         echo '<h4>Resultado de la tabla:</h4>';
-
+?>
+        <table border = '2px' style = "text-align: center; width: 500px;" >
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TITULO</th>                   
+                    <th>AUTOR</th>  
+                    <th>ISBN</th>  
+                    <th>DESRCIPCION</th>  
+                </tr>                
+            </thead>
+            <tbody>
+    
+<?php
         while ($fila = mysqli_fetch_array($consulta)){
-            echo $fila['id'].' '.$fila['titulo'].' '.$fila['autor'].' '.$fila['isbn'].' '.$fila['descripcion'];
-            echo '<br>';
+?>
+                <tr>
+                    <th scope = "row"><?php echo $fila['id']; ?></td>
+                    <td><?php echo $fila['titulo']; ?></td>            
+                    <td><?php echo $fila['autor']; ?></td> 
+                    <td><?php echo $fila['isbn']; ?></td> 
+                    <td><?php echo $fila['descripcion']; ?></td> 
+                </tr>
+<?php       
         }
+?>
+            </tbody>
+        </table>
+<?php
     }    
 ?>
 
